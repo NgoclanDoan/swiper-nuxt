@@ -1,0 +1,59 @@
+body {
+  @apply relative font-lato text-dark antialiased;
+  min-width: 320px;
+  padding-bottom: 56px;
+  @screen sm {
+    @apply pb-0;
+  }
+  &.loading {
+    overflow: hidden !important;
+  }
+}
+
+// Custom container
+.container {
+  @apply px-3 max-w-full mx-auto;
+  @screen md {
+    @apply px-0;
+    max-width: 90% !important;
+  }
+  @screen xl {
+    max-width: 1740px !important;
+  }
+  .container {
+    @apply max-w-full px-0 mx-0 !important;
+  }
+}
+
+.fader {
+  @apply fixed inset-0 bg-black-50;
+}
+
+.main-alert ~ .main-header {
+  #mainMenu {
+    top: 152px !important;
+  }
+}
+
+// Adding some defaults for truncate to work on span elements
+span.truncate {
+  display: inline-block !important; /*Forcing inline behavior since truncate won't work with inline-flex or inline*/
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+.bg-gradient {
+  &-shadow {
+    &:after {
+      @apply content block absolute inset-0 z-1 opacity-0 transition-opacity duration-300 delay-500;
+      background: linear-gradient(0deg, theme('colors.black.50') -35%, transparent 50%);
+    }
+
+    &-lg {
+      &:after {
+        @apply content block absolute inset-0 z-1;
+        background: linear-gradient(0deg, theme('colors.black.75') -35%, transparent 50%);
+      }
+    }
+  }
+}

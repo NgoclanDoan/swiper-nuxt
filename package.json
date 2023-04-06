@@ -1,0 +1,41 @@
+{
+  "name": "nuxt-swiper",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Nuxt.js Team",
+  "private": true,
+  "scripts": {
+    "dev": "MINIMAL=1 CSB=1 nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "post-update": "yarn upgrade --latest"
+  },
+  "dependencies": {
+    "@nuxt/http": "^0.5.0",
+    "@nuxtjs/svg-sprite": "^0.5.2",
+    "nuxt": "2.14.11",
+    "reqlim": "^0.0.0",
+    "swiper": "^6.4.1",
+    "vue-awaited": "^1.2.5",
+    "v-lazy-image": "^1.4.0",
+    "vue-lazy-hydration": "^1.0.0-beta.14"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-nullish-coalescing-operator": "7.12.1",
+    "@babel/plugin-proposal-optional-chaining": "7.12.7",
+    "@nuxt/types": "^2.14.11",
+    "@types/node": "14.14.13",
+    "nuxt-purgecss": "^1.0.0",
+    "postcss-comment": "^2.0.0",
+    "postcss-custom-properties": "^10.0.0",
+    "postcss-hexrgba": "^2.0.1",
+    "postcss-import": "^12.0.1",
+    "postcss-nested": "^4.2.3",
+    "prettier": "^2.2.1",
+    "prettier-plugin-tailwind-css": "^1.4.0",
+    "tailwindcss": "^1.9.6",
+    "tailwindcss-theming": "^2.4.3"
+  },
+  "keywords": []
+}

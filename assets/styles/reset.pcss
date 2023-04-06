@@ -1,0 +1,65 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
+// adaptive images
+img {
+  height: auto;
+  max-width: 100%;
+  object-fit: scale-down;
+  display: inline;
+  // Reducing default size for alt text of the image
+  font-size: 10px;
+  // Removing default outlines
+  &:focus,
+  &:active {
+    outline: 0;
+  }
+}
+
+svg,
+label {
+  display: inline-block;
+}
+
+li,
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: transparent;
+  // Disabling box-shadows on Safari inputs
+  -webkit-appearance: none;
+}
+
+span,
+div,
+button {
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+  }
+}
+
+input,
+textarea,
+form {
+  &:active,
+  &:hover,
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+    box-shadow: none;
+  }
+}
+
+// Disabling input zooming on iOS devices
+@supports (-webkit-overflow-scrolling: touch) {
+  select,
+  textarea,
+  input {
+    font-size: 16px;
+  }
+}

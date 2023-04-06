@@ -1,0 +1,25 @@
+.idea
+
+# dependencies
+node_modules
+.vscode
+
+# logs
+npm-debug.log
+yarn-error.log
+debug.log
+
+# Nuxt build
+.nuxt
+.nuxt-storybook
+storybook-static
+
+# Nuxt generate
+dist
+
+# Environment variables
+.env
+
+# PWA
+sw.*
+
